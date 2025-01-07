@@ -1,6 +1,8 @@
 pipeline {
     agent any
-	
+	environment {
+	    GIT_TOKEN = credentials('git-gcp-tf')
+    }
     stages {
         stage('Git Checkout') {
             steps {
