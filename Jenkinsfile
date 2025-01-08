@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-               /usr/bin/git "https://github.com/datanlabs1/gcp-tf-jenkins.git"
+               git "https://github.com/datanlabs1/gcp-tf-jenkins.git"
             }
         }
         
